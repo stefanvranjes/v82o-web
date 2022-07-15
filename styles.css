@@ -108,6 +108,29 @@ html {
     padding-right: 0.5rem;
 }
 
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 0.75rem;
+}
+
 .max-w-7xl {
     max-width: 80rem;
 }
@@ -144,6 +167,11 @@ html {
 .inset-y-0 {
     top: 0;
     bottom: 0;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .absolute {
@@ -237,6 +265,27 @@ html {
 @media (min-width: 640px) {
     .sm\:ml-6 {
         margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:px-7 {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:py-2 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:text-base {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -361,11 +410,6 @@ img {
 .px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-}
-
-.py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .text-sm {
@@ -540,4 +584,10 @@ button:focus {
 .mx-auto { 
     margin-left: auto;
     margin-right: auto;
+}
+
+.space-y-1>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.25rem * (1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
